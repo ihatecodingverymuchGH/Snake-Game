@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: url("../bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    background: linear-gradient(rgb(99, 204, 85), rgb(116, 227, 223));
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+#score{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.head {
+    background: linear-gradient(red, purple);
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.food {
+    background-color: rgb(255, 0, 0);
+    border: .25vmin solid black;
+    border-radius: 500px;
+
+}
+
+.snake {
+    background-color: rgb(111, 38, 100); /* Color for the snake body */
+    border: .25vmin solid white;
+    border-radius: 30px;
+}
